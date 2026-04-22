@@ -18,11 +18,6 @@ This project demonstrates a complete data workflow:
 
 ---
 
-## 🏗️ Architecture
-
-![Architecture](architecture.png)
-
----
 
 ## ⚙️ Tech Stack
 
@@ -95,18 +90,6 @@ Stores cleaned & enriched data with:
 
 ---
 
-## 🖥️ Screenshots
-
-### 📊 Dashboard
-![Dashboard](dashboard.png)
-
-### 🧾 UI
-![UI](ui.png)
-
-### 🔌 API
-![API](api.png)
-
----
 
 ## 🚀 How to Run
 
