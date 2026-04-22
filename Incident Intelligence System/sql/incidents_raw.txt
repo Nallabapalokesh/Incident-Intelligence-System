@@ -1,0 +1,35 @@
+Inidents Raw Table :-
+
+CREATE TABLE incidents_raw (
+    incident_id SERIAL PRIMARY KEY,
+    event_id VARCHAR(50),
+    timestamp TIMESTAMP,
+    location VARCHAR(100),
+    incident_type VARCHAR(50),
+    severity VARCHAR(20),
+    status VARCHAR(20),
+    response_time INT,
+    source VARCHAR(50),
+    is_duplicate BOOLEAN
+);
+
+
+Incidents Processed Table :-
+
+CREATE TABLE incidents_processed (
+    incident_id INT PRIMARY KEY,
+    event_id VARCHAR(50),
+    timestamp TIMESTAMP,
+    location VARCHAR(100),
+    incident_type VARCHAR(50),
+    severity VARCHAR(20),
+    status VARCHAR(20),
+    response_time INT,
+    source VARCHAR(50),
+    is_duplicate BOOLEAN,
+
+    -- 🔥 Added columns (important for analytics)
+    severity_score INT,
+    priority_flag VARCHAR(20),
+    incident_date DATE
+);
